@@ -12,10 +12,10 @@ const links = [
         name: "home",
         path: "/",
     },
-    // {
-    //     name: "services",
-    //     path: "/services",
-    // },
+    {
+        name: "services",
+        path: "/services",
+    },
     {
         name: "resume",
         path: "/resume",
@@ -52,7 +52,7 @@ const MobileNav = () => {
             <div className = "mt-32 mb-40 text-center">
                 <Link href = "/">
                 <h1 className = "text-4xl font-semibold">
-                    Manolo<span className = "text-accent">.</span>
+                    flowward<span className = "text-accent">.</span>
                 </h1>
                 </Link>
             </div>

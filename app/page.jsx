@@ -25,16 +25,16 @@ const Home = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Manolo Iñiguez.",
-        "a Software Developer.",
-        "a Game Developer.",
-        "a Tech Enthusiast."
+        "Flow with purpose.",
+        "Forward with power.",
+        "Flow straight forward.",
+        "FLOWWARD."
       ],
       typeSpeed: 50,
-      backSpeed: 50,
-      backDelay: 2000,
+      backSpeed: 25,
+      backDelay: 1500,
       loop: true,
-      showCursor: false,
+      showCursor: true,
     };
 
     const typed = new Typed('#typed-text', options);
@@ -48,24 +48,24 @@ const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-8">
           
           {/* TEXTO */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-lg">Computing Science Engineer</span>
             <h1 className="h2 mb-8 mt-2 text-2xl xl:text-4xl">
-              Hello, I&apos;m
-              <br/> 
+              {/* Hello, I&apos;m */}
+              {/* <br/>  */}
               <span key={key} className="text-accent inline-block min-h-[26px] text-2xl xl:text-4xl" id="typed-text"></span>
             </h1>
+            <span className="text-lg">Software Development</span>
 
             {/* <p className="max-w-[500px] mb-9 text-white/80"> */}
-            <p className="max-w-[500px] xl:max-w-[550px] text-white/80 mb-6 mx-auto xl:mx-0 leading-relaxed">
+            {/* <p className="max-w-[500px] xl:max-w-[550px] text-white/80 mb-6 mx-auto xl:mx-0 leading-relaxed">
               Passionate about invention and in love with the evolution of technology. I enjoy exploring new ideas and working hard until I achieve my goals. Humanistic education in liberal arts, reader to increase knowledge and operationalize information.
-            </p>
+            </p> */}
 
             {/* BOTON Y SOCIAL */}
-            <div className="flex flex-col xl:flex-row items-center gap-8">
+            {/* <div className="flex flex-col xl:flex-row items-center gap-8">
               
               <a href="/assets/cv/CV_completo.pdf" download="CV_completo.pdf">
                 <Button variant="outline" size="md" className="uppercase flex items-center gap-2">
@@ -77,7 +77,7 @@ const Home = () => {
               <div className="mb-8 xl:mb-0">
                 <Socials containerStyles={"flex gap-4"} iconStyles={"w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"} />
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* FOTO */}
@@ -87,7 +87,7 @@ const Home = () => {
         </div>
       </div>
       
-      <Stats />
+      {/* <Stats /> */}
     </section>
   );
 }

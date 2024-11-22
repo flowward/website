@@ -11,26 +11,26 @@ const Header = () => {
     <header className="py-8 xl:py-12 text-white">
         <div className="container mx-auto flex justify-between items-center">
             {/* LOGO */}
-            <Link href="/">
+            {/* <Link href="/">
             <h1 className="text-4xl font semibold">
-                Manolo<span className="text-accent">.</span>
+                flowward<span className="text-accent">.</span>
             </h1>
-            </Link>
+            </Link> */}
 
             {/* DESKTOP NAV */}
-            {/* HIRE ME BUTTON */}
-            <div className="hidden xl:flex justify-center item-center gap-8">
+            {/* CONTACT US BUTTON */}
+            {/* <div className="hidden xl:flex justify-center item-center gap-8">
                 <Nav/>
                 <Link href="/contact">
-                    <Button>Hire Me</Button>
+                    <Button>CONTACT US</Button>
                 </Link>
-            </div>
+            </div> */}
 
             {/* MOBILE NAV */}
-            {/* HIRE ME BUTTON */}
-            <div className="xl:hidden">
+            {/* <div className="xl:hidden">
                 <MobileNav/>
-            </div>
+            </div> */}
+
         </div>
     </header>
   )

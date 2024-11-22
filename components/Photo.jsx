@@ -23,14 +23,14 @@ const Photo = () => {
         >
           <div className="flex justify-center items-center w-full">
             <Image
-              // src="/assets/MainImage2.jpeg"
-              src="/assets/MainImage1.png"
-              // src="/assets/x.png"
+              // src="/assets/flowwardLogo1.png"
+              // src="/assets/flowwardLogo2.png"
+              src="/assets/flowwardLogo3.png"
               priority
               quality={100}
               layout="intrinsic"
-              width={498}
-              height={498}
+              width={720}
+              height={720}
               alt=""
               className="object-contain"
             />
@@ -45,7 +45,7 @@ const Photo = () => {
           viewBox={"0 0 506 506"}
           xmlns={"http://www.w3.org/2000/svg"}
         >
-          <motion.circle
+          {/* <motion.circle
             cx="253"
             cy="253"
             r="250"
@@ -63,7 +63,7 @@ const Photo = () => {
               repeat: Infinity,
               repeatType: "reverse"
             }}
-          />
+          /> */}
         </motion.svg>
 
       </motion.div>
