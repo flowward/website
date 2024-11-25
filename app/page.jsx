@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 // components
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
+import PayPhone from "@/components/PayPhone";
 import Stats from "@/components/Stats";
 
 
@@ -86,6 +87,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Componente de PayPhone */}
+      <PayPhone />
       
       {/* <Stats /> */}
     </section>
