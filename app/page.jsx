@@ -46,12 +46,6 @@ const Home = () => {
     };
   }, [key]);
 
-  const handlePaymentSuccess = (response) => {
-    // Manejo de la confirmación del pago
-    console.log("Pago confirmado:", response);
-    alert("¡Pago realizado con éxito!");
-  };
-
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -95,7 +89,7 @@ const Home = () => {
       </div>
 
       {/* Componente de PayPhone */}
-      <PayPhone onPaymentSuccess={handlePaymentSuccess} />
+      <PayPhone />
       
       {/* <Stats /> */}
     </section>

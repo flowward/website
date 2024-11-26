@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const Payphone = ({ onPaymentSuccess }) => {
+const Payphone = () => {
   useEffect(() => {
     const payphoneCss = document.createElement("link");
     payphoneCss.rel = "stylesheet";
@@ -25,15 +25,6 @@ const Payphone = ({ onPaymentSuccess }) => {
         tip: 0,
         reference: "Motivo del pago",
         clientTransactionId: `ID-${new Date().getTime()}`,
-        onPaymentConfirmed: (response) => {
-          console.log("Payment Confirmed:", response);
-          if (onPaymentSuccess) {
-            onPaymentSuccess(response);
-          }
-        },
-        onPaymentError: (error) => {
-          console.error("Payment Error:", error);
-        },
       }).render("pp-button");
     };
 
@@ -41,7 +32,7 @@ const Payphone = ({ onPaymentSuccess }) => {
       payphoneCss.remove();
       payphoneScript.remove();
     };
-  }, [onPaymentSuccess]);
+  }, []);
 
   return (
     <div className="mt-8 flex justify-center">
